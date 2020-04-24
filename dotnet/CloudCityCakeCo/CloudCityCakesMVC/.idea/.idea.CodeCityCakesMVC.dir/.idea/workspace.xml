@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f84ebd3b-9e5d-4dc3-8725-d375942d98ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIControllers/CakeOrderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/APIControllers/CakeOrderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIControllers/IngredientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/APIControllers/IngredientsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIControllers/OpeningHoursController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/APIControllers/OpeningHoursController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIControllers/PriceCalculatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/APIControllers/PriceCalculatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeCityCakesMVC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/CloudCityCakesMVC.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Context/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/Context/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/EntityConfiguration/CakeOrderConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/EntityConfiguration/CakeOrderConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/EntityConfiguration/UserConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/EntityConfiguration/UserConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositories/CakeOrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/CakeOrderRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositories/ICakeOrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/ICakeOrderRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositories/IIngredientsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/IIngredientsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositories/IngredientsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/IngredientsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20200421110719_InitialCreate.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Migrations/20200421110719_InitialCreate.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20200421110719_InitialCreate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Migrations/20200421110719_InitialCreate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/Cake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/Cake.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/Email.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/Email.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/EmailOrder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/EmailOrder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/IngredientList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/IngredientList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/OpeningHours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/OpeningHours.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/OrderDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/OrderDetails.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/SendGridAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/SendGridAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DTO/TwilioAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/TwilioAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Entities/CakeOrder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/Entities/CakeOrder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Enums/OrderStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/Enums/OrderStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Enums/ServiceResponseStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/Enums/ServiceResponseStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Extensions/ExtensionMethods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/Extensions/ExtensionMethods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Helpers/ServiceResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/Helpers/ServiceResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/ViewModels/CakeOrderViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/ViewModels/CakeOrderViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/ViewModels/CakeViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/ViewModels/CakeViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/ViewModels/OrdersViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Models/ViewModels/OrdersViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Implementations/CakeOrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/CakeOrderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Implementations/EmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/EmailService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Implementations/IngredientsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/IngredientsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Implementations/NotificationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/NotificationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Implementations/PriceCalculationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/PriceCalculationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Interfaces/ICakeOrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Interfaces/ICakeOrderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Interfaces/IEmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Interfaces/IEmailService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Interfaces/IIngredientsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Interfaces/IIngredientsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Interfaces/INotificationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Interfaces/INotificationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Interfaces/IPriceCalculationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Interfaces/IPriceCalculationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Rules/AcceptedNotificationRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Rules/AcceptedNotificationRule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Rules/CompletedNotificationRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Rules/CompletedNotificationRule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Rules/IStatusNotificationRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Services/Rules/IStatusNotificationRule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Admin/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Admin/Orders.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Admin/Orders.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Admin/Update.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Admin/Update.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/Views/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoice.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/invoice.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/images/cupcake.png" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/images/cupcake.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Interfaces/INotificationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/ViewModels/OrdersViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/CakeOrderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/ViewModels/CakeOrderViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/NotificationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/ViewModels/CakeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/PriceCalculationService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/EmailService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Implementations/IngredientsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.microsoft/usersecrets/e1885095-cba1-45cf-931a-20c933dcdbfg/secrets.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/ICakeOrderRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/APIControllers/CakeOrderController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Data/EntityConfiguration/CakeOrderConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Data/Repositories/CakeOrderRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/APIControllers/OpeningHoursController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Data/EntityConfiguration/UserConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/jquery/dist/jquery.min.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Views/Admin/Update.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Views/Admin/Orders.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/obj/Debug/netcoreapp3.1/CloudCityCakesMVC.RazorAssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/IngredientList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/OrderDetails.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/Email.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/SendGridAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/Cake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/EmailOrder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/OpeningHours.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Rules/AcceptedNotificationRule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/Enums/OrderStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/DTO/TwilioAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/Helpers/ServiceResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Services/Interfaces/ICakeOrderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/Enums/ServiceResponseStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CloudCityCakesMVC/Models/Entities/CakeOrder.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Models/Entities/CakeOrder.cs" />
+        <option value="$PROJECT_DIR$/Models/Entities/User.cs" />
+        <option value="$PROJECT_DIR$/Services/Implementations/EmailService.cs" />
+        <option value="$PROJECT_DIR$/APIControllers/OpeningHoursController.cs" />
+        <option value="$PROJECT_DIR$/Controllers/AdminController.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositories/CakeOrderRepository.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositories/ICakeOrderRepository.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositories/IUserRepository.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositories/UserRepository.cs" />
+        <option value="$PROJECT_DIR$/Models/DTO/EmailOrder.cs" />
+        <option value="$PROJECT_DIR$/Models/ViewModels/CakeOrderViewModel.cs" />
+        <option value="$PROJECT_DIR$/Services/Implementations/CakeOrderService.cs" />
+        <option value="$PROJECT_DIR$/Services/Implementations/NotificationHandler.cs" />
+        <option value="$PROJECT_DIR$/Services/Interfaces/ICakeOrderService.cs" />
+        <option value="$PROJECT_DIR$/Services/Interfaces/INotificationHandler.cs" />
+        <option value="$PROJECT_DIR$/Data/EntityConfiguration/CakeOrderConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Data/EntityConfiguration/UserConfiguration.cs" />
+        <option value="$USER_HOME$/.microsoft/usersecrets/e1885095-cba1-45cf-931a-20c933dcdbfg/secrets.json" />
+        <option value="$PROJECT_DIR$/Models/Enums/ServiceResponseStatus.cs" />
+        <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/../CloudCityCakesMVC/Views/Shared/_Layout.cshtml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aqWpUjN8g7mbvTPYok07fmm7k8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.CodeCityCakesMVC: CloudCityCakesMVC">
+    <configuration name="CodeCityCakesMVC: CloudCityCakesMVC" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CodeCityCakesMVC.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="CloudCityCakesMVC" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeCityCakesMVC: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CodeCityCakesMVC.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f84ebd3b-9e5d-4dc3-8725-d375942d98ce" name="Default Changelist" comment="" />
+      <created>1587463786464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587463786464</updated>
+      <workItem from="1587463788136" duration="9219000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1965" height="117" key="GridCell.Tab.0.bottom" timestamp="1587727206363">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206363" />
+    <state width="1965" height="117" key="GridCell.Tab.0.center" timestamp="1587727206362">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.0.center/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206362" />
+    <state width="1965" height="117" key="GridCell.Tab.0.left" timestamp="1587727206362">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.0.left/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206362" />
+    <state width="1965" height="117" key="GridCell.Tab.0.right" timestamp="1587727206363">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.0.right/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206363" />
+    <state width="1965" height="117" key="GridCell.Tab.1.bottom" timestamp="1587727206363">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206363" />
+    <state width="1965" height="117" key="GridCell.Tab.1.center" timestamp="1587727206363">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.1.center/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206363" />
+    <state width="1965" height="117" key="GridCell.Tab.1.left" timestamp="1587727206363">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.1.left/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206363" />
+    <state width="1965" height="117" key="GridCell.Tab.1.right" timestamp="1587727206363">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.1.right/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206363" />
+    <state width="1965" height="117" key="GridCell.Tab.2.bottom" timestamp="1587727206364">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.2.bottom/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206364" />
+    <state width="1965" height="117" key="GridCell.Tab.2.center" timestamp="1587727206364">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.2.center/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206364" />
+    <state width="1965" height="117" key="GridCell.Tab.2.left" timestamp="1587727206364">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.2.left/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206364" />
+    <state width="1965" height="117" key="GridCell.Tab.2.right" timestamp="1587727206364">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.2.right/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206364" />
+    <state width="1965" height="117" key="GridCell.Tab.3.bottom" timestamp="1587727206365">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.3.bottom/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206365" />
+    <state width="1965" height="117" key="GridCell.Tab.3.center" timestamp="1587727206365">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.3.center/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206365" />
+    <state width="1965" height="117" key="GridCell.Tab.3.left" timestamp="1587727206364">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.3.left/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206364" />
+    <state width="1965" height="117" key="GridCell.Tab.3.right" timestamp="1587727206365">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.3.right/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206365" />
+    <state width="1965" height="117" key="GridCell.Tab.4.bottom" timestamp="1587727206366">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.4.bottom/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206366" />
+    <state width="1965" height="117" key="GridCell.Tab.4.center" timestamp="1587727206365">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.4.center/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206365" />
+    <state width="1965" height="117" key="GridCell.Tab.4.left" timestamp="1587727206365">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.4.left/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206365" />
+    <state width="1965" height="117" key="GridCell.Tab.4.right" timestamp="1587727206365">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state width="1965" height="117" key="GridCell.Tab.4.right/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727206365" />
+    <state x="2552" y="272" width="819" height="546" key="find.popup" timestamp="1587727040929">
+      <screen x="1440" y="-270" width="3840" height="1577" />
+    </state>
+    <state x="2552" y="272" width="819" height="546" key="find.popup/0.23.1440.877/1440.-270.3840.1577@1440.-270.3840.1577" timestamp="1587727040929" />
+  </component>
+</project>

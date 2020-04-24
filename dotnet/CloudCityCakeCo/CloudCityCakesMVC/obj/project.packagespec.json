@@ -1,0 +1,78 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/lporter/Documents/Repos/Workshops/CodeCity/dotnet/CodeCityCakeCo/CloudCityCakesMVC/CloudCityCakesMVC.csproj",
+    "projectName": "CloudCityCakesMVC",
+    "projectPath": "/Users/lporter/Documents/Repos/Workshops/CodeCity/dotnet/CodeCityCakeCo/CloudCityCakesMVC/CloudCityCakesMVC.csproj",
+    "outputPath": "/Users/lporter/Documents/Repos/Workshops/CodeCity/dotnet/CodeCityCakeCo/CloudCityCakesMVC/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+          "target": "Package",
+          "version": "[3.1.3, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.3, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[3.1.3, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[3.1.3, )"
+        },
+        "sendgrid": {
+          "target": "Package",
+          "version": "[9.13.1, )"
+        },
+        "twilio": {
+          "target": "Package",
+          "version": "[5.38.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+    }
+  }
+}

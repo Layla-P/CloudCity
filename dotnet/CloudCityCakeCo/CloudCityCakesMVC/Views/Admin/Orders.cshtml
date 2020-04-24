@@ -1,0 +1,44 @@
+@model CloudCityCakesMVC.Models.ViewModels.OrdersViewModel
+
+
+@{
+    ViewBag.Title = "Cake Orders";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+
+<table id="order-table" class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Cake Order Id</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Order Date</th>
+            <th scope="col">Order Status</th>
+            <th scope="col">UserId</th>
+            <th scope="col">Completed Date</th>
+            <th scope="col">Updates</th>
+        </tr>
+        </thead>
+        <tbody id="order-table-body">
+
+        @foreach (var order in Model.CakeOrders)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.UserName</td>
+                <td>@order.OrderDate</td>
+                <td>@order.OrderStatus</td>
+                <td>@order.UserId</td>
+                <td>@order.CompletedDate</td>
+                <td>
+                <input asp-for="@order.Id" type="hidden"/>
+                <a id="wa-button" class="btn btn-sm btn-success" asp-controller="Admin" asp-action="Update" asp-route-id="@order.Id">
+                    Update
+                </a>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+
