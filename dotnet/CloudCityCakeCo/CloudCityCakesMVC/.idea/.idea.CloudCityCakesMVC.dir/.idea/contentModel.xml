@@ -13,6 +13,7 @@
         <e p="HomeController.cs" t="Include" />
       </e>
       <e p="invoice.pdf" t="Include" />
+      <e p="LICENCE.txt" t="Include" />
       <e p="Models" t="Include">
         <e p="DTO" t="Include">
           <e p="Cake.cs" t="Include" />
@@ -32,6 +33,7 @@
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
       </e>
+      <e p="README.md" t="Include" />
       <e p="Startup.cs" t="Include" />
       <e p="StudioFlow.json" t="Include" />
       <e p="Views" t="Include">
