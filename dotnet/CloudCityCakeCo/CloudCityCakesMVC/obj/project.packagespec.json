@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/lporter/Documents/Repos/Workshops/CodeCity/dotnet/CodeCityCakeCo/CloudCityCakesMVC/CloudCityCakesMVC.csproj",
+    "projectUniqueName": "/Users/lporter/Documents/Repos/Workshops/CloudCity/dotnet/CloudCityCakeCo/CloudCityCakesMVC/CloudCityCakesMVC.csproj",
     "projectName": "CloudCityCakesMVC",
-    "projectPath": "/Users/lporter/Documents/Repos/Workshops/CodeCity/dotnet/CodeCityCakeCo/CloudCityCakesMVC/CloudCityCakesMVC.csproj",
-    "outputPath": "/Users/lporter/Documents/Repos/Workshops/CodeCity/dotnet/CodeCityCakeCo/CloudCityCakesMVC/obj/",
+    "projectPath": "/Users/lporter/Documents/Repos/Workshops/CloudCity/dotnet/CloudCityCakeCo/CloudCityCakesMVC/CloudCityCakesMVC.csproj",
+    "outputPath": "/Users/lporter/Documents/Repos/Workshops/CloudCity/dotnet/CloudCityCakeCo/CloudCityCakesMVC/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
