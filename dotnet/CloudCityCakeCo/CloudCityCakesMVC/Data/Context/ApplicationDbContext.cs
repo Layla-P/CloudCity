@@ -22,7 +22,7 @@ namespace CloudCityCakesMVC.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             CakeOrderConfiguration.Configure(modelBuilder);
-
+            UserConfiguration.Configure(modelBuilder);
         }
         
     }

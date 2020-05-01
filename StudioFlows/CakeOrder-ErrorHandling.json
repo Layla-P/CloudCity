@@ -1,0 +1,828 @@
+{
+  "description": "A New Flow",
+  "states": [
+    {
+      "name": "Trigger",
+      "type": "InitialState",
+      "properties": {
+        "offset": {
+          "x": 90,
+          "y": 50
+        },
+        "flow_url": "https://webhooks.twilio.com/v1/Accounts/AC6adb4e680b743af9a90a0ddbe6891e2d/Flows/FW1a03cef4dc806463d376a5b48ba7c93c"
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF922309f23a50b8d95969cf8609598e43",
+          "uuid": "911163b9-b71e-4b11-bb62-bab1be3c48a6"
+        },
+        {
+          "event": "incomingCall",
+          "conditions": [],
+          "next": null,
+          "uuid": "28289c44-79d3-4006-ad44-31700f4f0604"
+        },
+        {
+          "event": "incomingRequest",
+          "conditions": [],
+          "next": null,
+          "uuid": "b5a112d4-6841-41de-bcef-2113fb109b84"
+        }
+      ],
+      "sid": "FF3312d3209d7e9869d529c709fda747fe"
+    },
+    {
+      "name": "Welcome",
+      "type": "MessagePrompt",
+      "properties": {
+        "offset": {
+          "x": -67,
+          "y": 281
+        },
+        "body": "Welcome to Cloud City Cake Company!\nWhat size cake would you like?\nWe have small, medium or large.",
+        "from": "{{flow.channel.address}}",
+        "timeout": 3600,
+        "save_response_as": null,
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF60551cad46eb5fd69c590f3f2a9effc1",
+          "uuid": "3a29907f-6a3d-4cfe-9f41-bfa321d012df"
+        },
+        {
+          "event": "timeout",
+          "conditions": [],
+          "next": null,
+          "uuid": "c5987dc9-ceec-4bf0-9d91-030abf82164e"
+        },
+        {
+          "event": "deliveryFailure",
+          "conditions": [],
+          "next": null,
+          "uuid": "765095d4-260d-4c95-b555-741e3edb59f8"
+        }
+      ],
+      "sid": "FF922309f23a50b8d95969cf8609598e43"
+    },
+    {
+      "name": "SizeCheck",
+      "type": "Branch",
+      "properties": {
+        "offset": {
+          "x": 300,
+          "y": 430
+        },
+        "input": "{{widgets.Welcome.inbound.Body}}"
+      },
+      "transitions": [
+        {
+          "event": "noMatch",
+          "conditions": [],
+          "next": "FF922309f23a50b8d95969cf8609598e43",
+          "uuid": "c67deec3-2f9f-452b-bace-43870e50dfc4"
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value matches_any_of small,medium,large",
+              "type": "matches_any_of",
+              "arguments": [
+                "{{widgets.Welcome.inbound.Body}}"
+              ],
+              "value": "small,medium,large"
+            }
+          ],
+          "next": "FF2f7b3284925269542be3e3d40c126132",
+          "uuid": "df8febc3-6478-4667-b36c-0d171ba7bd7b"
+        }
+      ],
+      "sid": "FF60551cad46eb5fd69c590f3f2a9effc1"
+    },
+    {
+      "name": "WhatCakeFlavour",
+      "type": "MessagePrompt",
+      "properties": {
+        "offset": {
+          "x": 270,
+          "y": 980
+        },
+        "body": "Super, what flavour would you like your {{widgets.Welcome.inbound.Body}}  cake to be?\nWe have {{widgets.IngredientsVariables.Flavours}}",
+        "from": "{{flow.channel.address}}",
+        "timeout": 3600,
+        "save_response_as": null,
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF41b1ad71d3b8e1f06edc3b75db51b970",
+          "uuid": "f8ef9fe2-d897-46bc-af9a-0a55d6e21927"
+        },
+        {
+          "event": "timeout",
+          "conditions": [],
+          "next": "FFb0362c58b26238193932a062dd7df9d3",
+          "uuid": "2c4cd6b9-ad6b-447d-83e1-ddab00f442cf"
+        },
+        {
+          "event": "deliveryFailure",
+          "conditions": [],
+          "next": null,
+          "uuid": "9f35de8b-a915-4f95-a4c8-b33b65291b56"
+        }
+      ],
+      "sid": "FF88d1887ce9095412e1158d69607ba2c8"
+    },
+    {
+      "name": "FetchIngredients",
+      "type": "Webhook",
+      "properties": {
+        "offset": {
+          "x": -220,
+          "y": 710
+        },
+        "method": "GET",
+        "url": "https://cloudcitycakecompany.azurewebsites.net/api/flavours",
+        "body": null,
+        "timeout": null,
+        "parameters": null,
+        "save_response_as": null,
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8"
+      },
+      "transitions": [
+        {
+          "event": "success",
+          "conditions": [],
+          "next": "FFb8d145bb74c98d7a451d6a15d76ea84e",
+          "uuid": "48284779-d523-47a0-8355-1afb8855934e"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": "FFdaf60c0fd1a61ff05938c174aa51f7a3",
+          "uuid": "798f5e6a-30d5-4e53-bc46-6fe58c7cdf61"
+        }
+      ],
+      "sid": "FF2f7b3284925269542be3e3d40c126132"
+    },
+    {
+      "name": "IngredientsVariables",
+      "type": "SetVariables",
+      "properties": {
+        "offset": {
+          "x": -230,
+          "y": 980
+        },
+        "variables": [
+          {
+            "key": "Flavours",
+            "value": "{{widgets.FetchIngredients.parsed.flavour | join: \", \"}}"
+          },
+          {
+            "key": "Frosting",
+            "value": "{{widgets.FetchIngredients.parsed.frosting | join: \", \"}}"
+          },
+          {
+            "key": "Toppings",
+            "value": "{{widgets.FetchIngredients.parsed.topping | join: \", \"}}"
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "event": "next",
+          "conditions": [],
+          "next": "FF88d1887ce9095412e1158d69607ba2c8",
+          "uuid": "cdcec16a-0e69-416e-9416-b234b837bb21"
+        }
+      ],
+      "sid": "FFb8d145bb74c98d7a451d6a15d76ea84e"
+    },
+    {
+      "name": "WhatCakeFrosting",
+      "type": "MessagePrompt",
+      "properties": {
+        "offset": {
+          "x": 440,
+          "y": 1300
+        },
+        "body": "What frosting would you like?\nWe have {{widgets.IngredientsVariables.Frosting}} .",
+        "from": "{{flow.channel.address}}",
+        "timeout": 3600,
+        "save_response_as": null,
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF0eb76d27ddc709f6d212e4a51aa53fb6",
+          "uuid": "33585d84-ee79-4d2c-a8c6-e269e14d824c"
+        },
+        {
+          "event": "timeout",
+          "conditions": [],
+          "next": "FFb0362c58b26238193932a062dd7df9d3",
+          "uuid": "0f057da3-6d4d-45b7-911b-0e9311574401"
+        },
+        {
+          "event": "deliveryFailure",
+          "conditions": [],
+          "next": null,
+          "uuid": "e786af39-8ebf-461e-9191-932012452583"
+        }
+      ],
+      "sid": "FFdca1e3e1ce37b03f89382f25f6888d03"
+    },
+    {
+      "name": "WhatCakeTopping",
+      "type": "MessagePrompt",
+      "properties": {
+        "offset": {
+          "x": 440,
+          "y": 1690
+        },
+        "body": "Finally, what topping would you like?\nWe have {{widgets.IngredientsVariables.Toppings}}",
+        "from": "{{flow.channel.address}}",
+        "timeout": 3600,
+        "save_response_as": null,
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF878f32dfc690ede20a3e9eff50afcdd8",
+          "uuid": "1aa659ff-8b5b-4088-b9e1-5cd9fb4f97ca"
+        },
+        {
+          "event": "timeout",
+          "conditions": [],
+          "next": "FFb0362c58b26238193932a062dd7df9d3",
+          "uuid": "59015f85-a8b9-472a-802a-77671dd4a02a"
+        },
+        {
+          "event": "deliveryFailure",
+          "conditions": [],
+          "next": null,
+          "uuid": "7c22d546-801f-4bcc-af83-dfd13bb79e69"
+        }
+      ],
+      "sid": "FF3d7bac02da725c387e80684867f1511c"
+    },
+    {
+      "name": "FlavourCheck",
+      "type": "Branch",
+      "properties": {
+        "offset": {
+          "x": -215,
+          "y": 1252
+        },
+        "input": "{{widgets.WhatCakeFlavour.inbound.Body}}"
+      },
+      "transitions": [
+        {
+          "event": "noMatch",
+          "conditions": [],
+          "next": "FF88d1887ce9095412e1158d69607ba2c8",
+          "uuid": "acf43218-b92a-47b5-8b3d-29f43ad5537c"
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value matches_any_of {{",
+              "type": "matches_any_of",
+              "arguments": [
+                "{{widgets.WhatCakeFlavour.inbound.Body}}"
+              ],
+              "value": "{{widgets.IngredientsVariables.Flavours}}"
+            }
+          ],
+          "next": "FFdca1e3e1ce37b03f89382f25f6888d03",
+          "uuid": "39240eb1-1dfd-415b-b8fe-4e063be19a85"
+        }
+      ],
+      "sid": "FF41b1ad71d3b8e1f06edc3b75db51b970"
+    },
+    {
+      "name": "FrostingCheck",
+      "type": "Branch",
+      "properties": {
+        "offset": {
+          "x": -260,
+          "y": 1560
+        },
+        "input": "{{widgets.WhatCakeFrosting.inbound.Body}}"
+      },
+      "transitions": [
+        {
+          "event": "noMatch",
+          "conditions": [],
+          "next": "FFdca1e3e1ce37b03f89382f25f6888d03",
+          "uuid": "bd99c725-11d7-42b6-8e3c-baa0c887f56d"
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value matches_any_of {{widgets.IngredientsVariables.Frosting}} ",
+              "type": "matches_any_of",
+              "arguments": [
+                "{{widgets.WhatCakeFrosting.inbound.Body}}"
+              ],
+              "value": "{{widgets.IngredientsVariables.Frosting}} "
+            }
+          ],
+          "next": "FF3d7bac02da725c387e80684867f1511c",
+          "uuid": "5c07da74-957d-45a2-87a6-9e04bd35d6a6"
+        }
+      ],
+      "sid": "FF0eb76d27ddc709f6d212e4a51aa53fb6"
+    },
+    {
+      "name": "ToppingCheck",
+      "type": "Branch",
+      "properties": {
+        "offset": {
+          "x": -240,
+          "y": 1930
+        },
+        "input": "{{widgets.WhatCakeTopping.inbound.Body}}"
+      },
+      "transitions": [
+        {
+          "event": "noMatch",
+          "conditions": [],
+          "next": "FF3d7bac02da725c387e80684867f1511c",
+          "uuid": "55dfcf92-8570-45d2-a732-601dc5667741"
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value matches_any_of {{widgets.IngredientsVariables.Toppings}}",
+              "type": "matches_any_of",
+              "arguments": [
+                "{{widgets.WhatCakeTopping.inbound.Body}}"
+              ],
+              "value": "{{widgets.IngredientsVariables.Toppings}}"
+            }
+          ],
+          "next": "FF37864eb72841ef971b36f09ef9727101",
+          "uuid": "67480486-8e23-4be0-b11e-a27eb5f5b964"
+        }
+      ],
+      "sid": "FF878f32dfc690ede20a3e9eff50afcdd8"
+    },
+    {
+      "name": "CakeOptions",
+      "type": "SetVariables",
+      "properties": {
+        "offset": {
+          "x": 220,
+          "y": 2220
+        },
+        "variables": [
+          {
+            "key": "Size",
+            "value": "{{widgets.Welcome.inbound.Body}}"
+          },
+          {
+            "key": "Flavour",
+            "value": "{{widgets.WhatCakeFlavour.inbound.Body}}"
+          },
+          {
+            "key": "Frosting",
+            "value": "{{widgets.WhatCakeFrosting.inbound.Body}}"
+          },
+          {
+            "key": "Topping",
+            "value": "{{widgets.WhatCakeTopping.inbound.Body}}"
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "event": "next",
+          "conditions": [],
+          "next": "FFbae68981ccbf51d54a1bbeec15b8b8cd",
+          "uuid": "6d589b45-d400-4992-a540-6037684191f1"
+        }
+      ],
+      "sid": "FF37864eb72841ef971b36f09ef9727101"
+    },
+    {
+      "name": "GetPrice",
+      "type": "Webhook",
+      "properties": {
+        "offset": {
+          "x": -195,
+          "y": 2363
+        },
+        "method": "GET",
+        "url": "https://cloudcitycakecompany.azurewebsites.net/api/PriceCalculator",
+        "body": null,
+        "timeout": null,
+        "parameters": [
+          {
+            "key": "size",
+            "value": "{{widgets.CakeOptions.Size}}"
+          },
+          {
+            "key": "flavour",
+            "value": "{{widgets.CakeOptions.Flavour}}"
+          },
+          {
+            "key": "frosting",
+            "value": "{{widgets.CakeOptions.Frosting}}"
+          },
+          {
+            "key": "topping",
+            "value": "{{widgets.CakeOptions.Topping}}"
+          }
+        ],
+        "save_response_as": null,
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8"
+      },
+      "transitions": [
+        {
+          "event": "success",
+          "conditions": [],
+          "next": "FF5a7014a802d96b8fb949dbdd76d45979",
+          "uuid": "09d118a9-abb6-4632-8785-af147a3ae25b"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": "FF18913365efa4185b7c80785891a7c6e7",
+          "uuid": "91063a2f-5e98-4738-8894-6260b2e8858c"
+        }
+      ],
+      "sid": "FFbae68981ccbf51d54a1bbeec15b8b8cd"
+    },
+    {
+      "name": "CheckPrice",
+      "type": "MessagePrompt",
+      "properties": {
+        "offset": {
+          "x": 140,
+          "y": 2510
+        },
+        "body": "Your cake will cost {{widgets.GetPrice.parsed.total}}, reply Yes to continue",
+        "from": "{{flow.channel.address}}",
+        "timeout": 3600,
+        "save_response_as": null,
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF7fda5b5546c92ea4f5f93d620ac6b722",
+          "uuid": "fd786c04-1663-4230-9e4b-aa4a053bcd28"
+        },
+        {
+          "event": "timeout",
+          "conditions": [],
+          "next": "FFb0362c58b26238193932a062dd7df9d3",
+          "uuid": "a8ca6905-cd9c-4380-b075-84d1fc801e0c"
+        },
+        {
+          "event": "deliveryFailure",
+          "conditions": [],
+          "next": null,
+          "uuid": "956e4859-0381-4192-a84b-a781e9f91560"
+        }
+      ],
+      "sid": "FF5a7014a802d96b8fb949dbdd76d45979"
+    },
+    {
+      "name": "AgreePrice",
+      "type": "Branch",
+      "properties": {
+        "offset": {
+          "x": -237,
+          "y": 2774
+        },
+        "input": "{{widgets.CheckPrice.inbound.Body}}"
+      },
+      "transitions": [
+        {
+          "event": "noMatch",
+          "conditions": [],
+          "next": "FF8fd74a7ee673b9dcf703773c7c5e5280",
+          "uuid": "12256adc-86bd-4183-839a-33b6401bdeff"
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value matches_any_of yes,Yes,Y,y",
+              "type": "matches_any_of",
+              "arguments": [
+                "{{widgets.CheckPrice.inbound.Body}}"
+              ],
+              "value": "yes,Yes,Y,y"
+            }
+          ],
+          "next": "FFbbf2de0ab0b7360ea700c23a8b319712",
+          "uuid": "267760cd-cd0d-4a51-9268-d8cca3e60076"
+        }
+      ],
+      "sid": "FF7fda5b5546c92ea4f5f93d620ac6b722"
+    },
+    {
+      "name": "AskName",
+      "type": "MessagePrompt",
+      "properties": {
+        "offset": {
+          "x": 430,
+          "y": 2810
+        },
+        "body": "Great, we just need you to reply with your full name.",
+        "from": "{{flow.channel.address}}",
+        "timeout": 3600,
+        "save_response_as": null,
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF64c7e43de3152c9645379150c85e84d5",
+          "uuid": "e0860213-3af8-4c10-bfe1-f1e4154211c2"
+        },
+        {
+          "event": "timeout",
+          "conditions": [],
+          "next": "FFb0362c58b26238193932a062dd7df9d3",
+          "uuid": "ea3bf56b-dd44-44b1-8e5c-3e1b3b842466"
+        },
+        {
+          "event": "deliveryFailure",
+          "conditions": [],
+          "next": null,
+          "uuid": "d0afda2f-2579-41df-bf8e-4f00a80c06b7"
+        }
+      ],
+      "sid": "FFbbf2de0ab0b7360ea700c23a8b319712"
+    },
+    {
+      "name": "AskEmail",
+      "type": "MessagePrompt",
+      "properties": {
+        "offset": {
+          "x": 240,
+          "y": 3050
+        },
+        "body": "Thanks, {{widgets.AskName.inbound.Body}} .\nMay we have your email so we can send out the invoice too?",
+        "from": "{{flow.channel.address}}",
+        "timeout": 3600,
+        "save_response_as": null,
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "conditions": [],
+          "next": "FF4a2e6be6de38776b30975682112dde05",
+          "uuid": "6139ae72-2c06-4114-bdd2-de24f37f9902"
+        },
+        {
+          "event": "timeout",
+          "conditions": [],
+          "next": "FFb0362c58b26238193932a062dd7df9d3",
+          "uuid": "bd5e4168-6904-4dd6-8019-ea6a4f3164c1"
+        },
+        {
+          "event": "deliveryFailure",
+          "conditions": [],
+          "next": null,
+          "uuid": "19d2d386-9a64-478d-94b9-20660eeb7b53"
+        }
+      ],
+      "sid": "FF64c7e43de3152c9645379150c85e84d5"
+    },
+    {
+      "name": "PlaceOrder",
+      "type": "Webhook",
+      "properties": {
+        "offset": {
+          "x": 60,
+          "y": 3460
+        },
+        "method": "POST",
+        "url": "http://layla.ngrok.io/api/orders",
+        "body": "{\n \"number\": \"{{trigger.message.From}}\",\n \"name\": \"{{widgets.AskName.inbound.Body}}\",\n \"email\": \"{{widgets.AskEmail.inbound.Body}}\",\n  \"cake\": {\n      \"topping\": \"{{widgets.CakeOptions.Topping}} \"\n      \"frosting\": \"{{widgets.CakeOptions.Frosting}} \",      \n      \"flavour\": \"{{widgets.CakeOptions.Falvour}} \",\n      \"size\": \"{{widgets.CakeOptions.Size}} \",\n      \"price\":  {{widgets.GetPrice.parsed.total}} \n      }\n}",
+        "timeout": null,
+        "parameters": null,
+        "save_response_as": null,
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8"
+      },
+      "transitions": [
+        {
+          "event": "success",
+          "conditions": [],
+          "next": null,
+          "uuid": "611a4ff0-1c31-4c60-acc4-620ea5af73de"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": null,
+          "uuid": "aa006d08-d809-4ad3-b7de-3e2fe47857a2"
+        }
+      ],
+      "sid": "FF49d129fb20719cdd341e4fa45cf18c44"
+    },
+    {
+      "name": "FetchIngredientsError",
+      "type": "Message",
+      "properties": {
+        "offset": {
+          "x": 420,
+          "y": 720
+        },
+        "body": "Hmmmm, something went wrong.  Let's try that again!",
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "sent",
+          "conditions": [],
+          "next": "FF2f7b3284925269542be3e3d40c126132",
+          "uuid": "28ade63e-a359-4660-8d6f-389389e12e5b"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": null,
+          "uuid": "6625b559-19e5-422c-ac19-53ddcc50ef00"
+        }
+      ],
+      "sid": "FFdaf60c0fd1a61ff05938c174aa51f7a3"
+    },
+    {
+      "name": "timeout",
+      "type": "Message",
+      "properties": {
+        "offset": {
+          "x": 1040,
+          "y": 2510
+        },
+        "body": "Looks like you've changed your mind about cake for the time being...",
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "sent",
+          "conditions": [],
+          "next": null,
+          "uuid": "9f07f58b-21f0-4f68-a1ae-f3a9bdc1f00e"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": null,
+          "uuid": "fd4d4bdd-8d41-4428-b49f-1a282cfb6950"
+        }
+      ],
+      "sid": "FFb0362c58b26238193932a062dd7df9d3"
+    },
+    {
+      "name": "Confirming",
+      "type": "Message",
+      "properties": {
+        "offset": {
+          "x": 670,
+          "y": 3350
+        },
+        "body": "Great - we're just confirming your order!",
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "sent",
+          "conditions": [],
+          "next": "FF49d129fb20719cdd341e4fa45cf18c44",
+          "uuid": "78f9a014-d487-4cce-b893-14afd118dc07"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": null,
+          "uuid": "f22503d6-0fdd-49fa-9c08-85a40e19edef"
+        }
+      ],
+      "sid": "FF4a2e6be6de38776b30975682112dde05"
+    },
+    {
+      "name": "GetPriceError",
+      "type": "Message",
+      "properties": {
+        "offset": {
+          "x": -739,
+          "y": 2376
+        },
+        "body": "Hmmmm, something went wrong.  Let's try that again!",
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "sent",
+          "conditions": [],
+          "next": "FFbae68981ccbf51d54a1bbeec15b8b8cd",
+          "uuid": "5c50d916-95ad-42d1-ac5c-6f966357135f"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": null,
+          "uuid": "58dc88a1-822d-4ebe-910c-023a146cf5da"
+        }
+      ],
+      "sid": "FF18913365efa4185b7c80785891a7c6e7"
+    },
+    {
+      "name": "End",
+      "type": "Message",
+      "properties": {
+        "offset": {
+          "x": -730,
+          "y": 2899
+        },
+        "body": "Looks like you don't want to continue... maybe next time!",
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "media_url": null,
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "attributes": null
+      },
+      "transitions": [
+        {
+          "event": "sent",
+          "conditions": [],
+          "next": null,
+          "uuid": "e702207e-409f-46be-a2bd-cd2dbc353121"
+        },
+        {
+          "event": "failed",
+          "conditions": [],
+          "next": null,
+          "uuid": "dfa71464-b60b-442f-841f-c2aad42f5dcb"
+        }
+      ],
+      "sid": "FF8fd74a7ee673b9dcf703773c7c5e5280"
+    }
+  ]
+}

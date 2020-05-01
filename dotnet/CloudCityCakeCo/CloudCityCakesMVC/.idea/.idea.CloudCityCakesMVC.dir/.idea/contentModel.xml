@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
-      <e p="packages" t="ExcludeRecursive" />
-    </e>
-    <e p="$PROJECT_DIR$/../CodeCityCakesMVC" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="APIControllers" t="Include">
         <e p="CakeOrderController.cs" t="Include" />
         <e p="IngredientsController.cs" t="Include" />
@@ -14,7 +11,7 @@
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
-      <e p="CodeCityCakesMVC.csproj" t="IncludeRecursive" />
+      <e p="CloudCityCakesMVC.csproj" t="IncludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="AdminController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
@@ -38,8 +35,8 @@
       </e>
       <e p="invoice.pdf" t="Include" />
       <e p="Migrations" t="Include">
-        <e p="20200420105954_initialCreate.cs" t="Include" />
-        <e p="20200420105954_initialCreate.Designer.cs" t="Include" />
+        <e p="20200421110719_InitialCreate.cs" t="Include" />
+        <e p="20200421110719_InitialCreate.Designer.cs" t="Include" />
         <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
@@ -76,11 +73,12 @@
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">
-            <e p="CodeCityCakesMVC.AssemblyInfo.cs" t="Include" />
-            <e p="CodeCityCakesMVC.RazorAssemblyInfo.cs" t="Include" />
+            <e p="CloudCityCakesMVC.AssemblyInfo.cs" t="Include" />
+            <e p="CloudCityCakesMVC.RazorAssemblyInfo.cs" t="Include" />
           </e>
         </e>
       </e>
+      <e p="packages" t="ExcludeRecursive" />
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
